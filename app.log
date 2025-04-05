@@ -1,0 +1,449 @@
+2025-03-04 22:10:14,870 INFO: New session id: d3867c6b-9e57-4a1e-90c9-172bb36b1e61 [in /Users/dejanvujic/Desktop/site-cv/app.py:74]
+2025-03-04 22:10:15,039 ERROR: An error occurred: Error 61 connecting to localhost:6379. Connection refused. [in /Users/dejanvujic/Desktop/site-cv/app.py:109]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1293, in __inner
+    self.limiter._check_request_limit(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1170, in _check_request_limit
+    raise e
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1152, in _check_request_limit
+    self.__evaluate_limits(endpoint, all_limits)
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1089, in __evaluate_limits
+    if not method(lim.limit, *args, **kwargs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/strategies.py", line 140, in hit
+    self.storage.incr(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/base.py", line 27, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/redis.py", line 210, in incr
+    return int(self.lua_incr_expire([key], [expiry, amount]))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5501, in __call__
+    return client.evalsha(self.sha, len(keys), *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5710, in evalsha
+    return self._evalsha("EVALSHA", sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5694, in _evalsha
+    return self.execute_command(command, sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+2025-03-04 22:12:07,823 ERROR: Got requested question Who is Dejan? [in /Users/dejanvujic/Desktop/site-cv/app.py:163]
+NoneType: None
+2025-03-05 21:13:48,722 INFO: New session id: 246251de-6d3b-4b6f-b90f-253595f5829c [in /Users/dejanvujic/Desktop/site-cv/app.py:74]
+2025-04-05 11:02:59,870 INFO: New session id: c794b656-a8df-48e4-88db-11d22ba73ed6 [in /Users/dejanvujic/Desktop/site-cv/app.py:74]
+2025-04-05 11:03:00,099 ERROR: An error occurred: Error 61 connecting to localhost:6379. Connection refused. [in /Users/dejanvujic/Desktop/site-cv/app.py:109]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1293, in __inner
+    self.limiter._check_request_limit(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1170, in _check_request_limit
+    raise e
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1152, in _check_request_limit
+    self.__evaluate_limits(endpoint, all_limits)
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1089, in __evaluate_limits
+    if not method(lim.limit, *args, **kwargs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/strategies.py", line 140, in hit
+    self.storage.incr(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/base.py", line 27, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/redis.py", line 210, in incr
+    return int(self.lua_incr_expire([key], [expiry, amount]))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5501, in __call__
+    return client.evalsha(self.sha, len(keys), *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5710, in evalsha
+    return self._evalsha("EVALSHA", sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5694, in _evalsha
+    return self.execute_command(command, sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+2025-04-05 11:03:03,073 ERROR: An error occurred: Error 61 connecting to localhost:6379. Connection refused. [in /Users/dejanvujic/Desktop/site-cv/app.py:109]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1293, in __inner
+    self.limiter._check_request_limit(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1170, in _check_request_limit
+    raise e
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1152, in _check_request_limit
+    self.__evaluate_limits(endpoint, all_limits)
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1089, in __evaluate_limits
+    if not method(lim.limit, *args, **kwargs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/strategies.py", line 140, in hit
+    self.storage.incr(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/base.py", line 27, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/redis.py", line 210, in incr
+    return int(self.lua_incr_expire([key], [expiry, amount]))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5501, in __call__
+    return client.evalsha(self.sha, len(keys), *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5710, in evalsha
+    return self._evalsha("EVALSHA", sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5694, in _evalsha
+    return self.execute_command(command, sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+2025-04-05 11:05:40,287 ERROR: An error occurred: Error 61 connecting to localhost:6379. Connection refused. [in /Users/dejanvujic/Desktop/site-cv/app.py:109]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1293, in __inner
+    self.limiter._check_request_limit(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1170, in _check_request_limit
+    raise e
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1152, in _check_request_limit
+    self.__evaluate_limits(endpoint, all_limits)
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1089, in __evaluate_limits
+    if not method(lim.limit, *args, **kwargs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/strategies.py", line 140, in hit
+    self.storage.incr(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/base.py", line 27, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/redis.py", line 210, in incr
+    return int(self.lua_incr_expire([key], [expiry, amount]))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5501, in __call__
+    return client.evalsha(self.sha, len(keys), *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5710, in evalsha
+    return self._evalsha("EVALSHA", sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5694, in _evalsha
+    return self.execute_command(command, sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+2025-04-05 11:06:49,982 ERROR: An error occurred: Error 61 connecting to localhost:6379. Connection refused. [in /Users/dejanvujic/Desktop/site-cv/app.py:109]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1293, in __inner
+    self.limiter._check_request_limit(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1170, in _check_request_limit
+    raise e
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1152, in _check_request_limit
+    self.__evaluate_limits(endpoint, all_limits)
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1089, in __evaluate_limits
+    if not method(lim.limit, *args, **kwargs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/strategies.py", line 140, in hit
+    self.storage.incr(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/base.py", line 27, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/redis.py", line 210, in incr
+    return int(self.lua_incr_expire([key], [expiry, amount]))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5501, in __call__
+    return client.evalsha(self.sha, len(keys), *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5710, in evalsha
+    return self._evalsha("EVALSHA", sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5694, in _evalsha
+    return self.execute_command(command, sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+2025-04-05 11:06:50,971 ERROR: An error occurred: Error 61 connecting to localhost:6379. Connection refused. [in /Users/dejanvujic/Desktop/site-cv/app.py:109]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1293, in __inner
+    self.limiter._check_request_limit(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1170, in _check_request_limit
+    raise e
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1152, in _check_request_limit
+    self.__evaluate_limits(endpoint, all_limits)
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1089, in __evaluate_limits
+    if not method(lim.limit, *args, **kwargs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/strategies.py", line 140, in hit
+    self.storage.incr(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/base.py", line 27, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/redis.py", line 210, in incr
+    return int(self.lua_incr_expire([key], [expiry, amount]))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5501, in __call__
+    return client.evalsha(self.sha, len(keys), *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5710, in evalsha
+    return self._evalsha("EVALSHA", sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5694, in _evalsha
+    return self.execute_command(command, sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+2025-04-05 11:08:35,888 ERROR: An error occurred: Error 61 connecting to localhost:6379. Connection refused. [in /Users/dejanvujic/Desktop/site-cv/app.py:109]
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 357, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/retry.py", line 62, in call_with_retry
+    return do()
+           ^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 358, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 730, in _connect
+    raise err
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 718, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1293, in __inner
+    self.limiter._check_request_limit(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1170, in _check_request_limit
+    raise e
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1152, in _check_request_limit
+    self.__evaluate_limits(endpoint, all_limits)
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py", line 1089, in __evaluate_limits
+    if not method(lim.limit, *args, **kwargs):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/strategies.py", line 140, in hit
+    self.storage.incr(
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/base.py", line 27, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/limits/storage/redis.py", line 210, in incr
+    return int(self.lua_incr_expire([key], [expiry, amount]))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5501, in __call__
+    return client.evalsha(self.sha, len(keys), *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5710, in evalsha
+    return self._evalsha("EVALSHA", sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/commands/core.py", line 5694, in _evalsha
+    return self.execute_command(command, sha, numkeys, *keys_and_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to localhost:6379. Connection refused.
+2025-04-05 11:09:31,908 ERROR: Got requested question Where Dejan works now? [in /Users/dejanvujic/Desktop/site-cv/app.py:167]
+NoneType: None
+2025-04-05 11:35:28,269 INFO: New session id: 94ac3c25-ba38-4303-ab09-b1f3c9b76310 [in /Users/dejanvujic/Desktop/site-cv/app.py:78]

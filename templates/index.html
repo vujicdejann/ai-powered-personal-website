@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dejan Vujić | Professional Data Scientist Crafting AI-Driven Solutions</title>
+  <meta name="description" content="Dejan Vujić is a data scientist specializing in AI, machine learning, and data-driven marketing. Explore his AI-powered website, advanced analytics projects, and innovative solutions in business intelligence, automation, and large language models (LLMs).">
+  
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="no-referrer">
+
+  <link rel="canonical" href="https://vujicdejan.com" />
+
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-..." 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+
+  <meta property="og:title" content="Dejan Vujić | Professional Data Scientist Crafting AI-Driven Solutions">
+  <meta property="og:description" content="Discover Dejan Vujić's expertise in AI, machine learning, and data-driven marketing. Explore his AI-powered CV, ML projects, and innovative business solutions.">
+  <meta property="og:image" content="./static/images/featured.png">
+  <meta property="og:url" content="https://vujicdejan.com">
+  <meta property="og:type" content="website">
+
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Dejan Vujić | Professional Data Scientist Crafting AI-Driven Solutions">
+   <meta name="twitter:description" content="Discover Dejan Vujić's expertise in AI, machine learning, and data-driven marketing. Explore his AI-powered CV, ML projects, and innovative business solutions.">
+   <meta name="twitter:image" content="./static/images/featured.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" 
+  />
+
+  <link rel="stylesheet" href="./static/main.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <link rel="icon" type="image/x-icon" href="./static/images/favicon.ico">
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lcxy54qAAAAAOCrjuTt7cGM0V7zO1kCReGuS_Z_"></script>
+
+  <script src="./static/main.js" nonce="123456"></script>
+  <script src="{{ url_for('static', filename='main.js') }}" nonce="123456"></script>
+
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdnjs.cloudflare.com https://www.google.com https://www.gstatic.com;
+    style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline';
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;
+    img-src 'self' data: https://vujicdejan.com;
+    connect-src 'self';
+    frame-ancestors 'self';
+    form-action 'self';
+    base-uri 'self';
+  ">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dejan Vujić",
+      "jobTitle": "Data Scientist",
+      "url": "https://vujicdejan.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/vujicdejan/",
+        "https://github.com/vujicdejann"
+      ],
+      "description": "Discover Dejan Vujić's expertise in AI, machine learning, and data-driven marketing. Explore his AI-powered CV, ML projects, and innovative business solutions.",
+      "image": "./static/images/profile.png",
+      "email": "mailto:contact@vujicdejan.com"
+    }
+    </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lazyImages = document.querySelectorAll('img[data-src]');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            observer.unobserve(img);
+          }
+        });
+      });
+
+      lazyImages.forEach(img => observer.observe(img));
+    });
+  </script>
+
+</head>
+
+<body>
+  <section class="main page">
+    <div class="content-holder">
+
+      <section class="sidebar">
+        <div class="me">
+          <img src="./static/images/profile.png" alt="Dejan Vujić Data Scientist Profile Picture" loading="lazy">
+        </div>
+        <div class="info-cnt">
+          <span class="position">Hey, I am <h1>Dejan Vujić</h1></span>
+          <div class="general-info">
+            <div class="gen-item">
+              <div class="label label-first">
+                <i class="fa-solid fa-house"></i>
+                <span>
+                  <a class="link" target="_blank" href="https://maps.app.goo.gl/Z72Tsq8JtyXUeGap9">Belgrade, Serbia</a>
+                </span>
+              </div>
+            </div>
+            <div class="gen-item">
+              <div class="label">
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                  <a class="link" target="_blank" href="mailto:contact@vujicdejan.com">contact@vujicdejan.com</a>
+                </span>
+              </div>
+            </div>
+            <div class="gen-item">
+              <div class="label">
+                <i class="fa-solid fa-link"></i>
+                <span>
+                  <a class="link" target="_blank" href="https://vujicdejan.com/">vujicdejan.com</a>
+                </span>
+              </div>
+            </div>
+            <div class="gen-item">
+              <div class="label">
+                <i class="fa-solid fa-link"></i>
+                <span>
+                  <a class="link" target="_blank" href="https://www.linkedin.com/in/vujicdejan/">linkedin/vujicdejan</a>
+                </span>
+              </div>
+            </div>
+            <div class="gen-item">
+              <div class="label">
+                <i class="fa-solid fa-link"></i>
+                <span>
+                  <a class="link" target="_blank" href="https://github.com/vujicdejann">github/vujicdejan</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        
+        <div class="switch-container">
+          <div class="button-container">
+            <button id="download-cv" class="custom-button">
+              <span class="icon-wrapper">
+                <i class="fa-solid fa-arrow-down"></i>
+            </span>
+            <span class="button-text">Unlock AI-powered CV</span>
+            </button>
+            </span>
+          </div>
+        </div>
+
+        <section class="cv-section see">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <span>AI-Powered Summary</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body ai-summ">
+            <div class="cv-section-item d-block">
+              <div id="loading-gif-container" style="text-align: center;">
+                <img
+                  id="ai"
+                  src="./static/images/ai.gif"
+                  alt="Loading..."
+                  style="width:120px; height:auto;"
+                >
+              </div>
+              <p id="about-me-text" style="display: none;"></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>Professional Experience</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+              <div class="cv-item-left">
+                <div class="date">Mar 2024 - Present <br> <b>Full-time</b></div>
+              </div>
+              <div class="cv-item-right">
+                <h3>Data Scientist</h3>
+                <div class="institution">
+                  <a href="https://yettel.rs" rel="nofollow" target="_blank" class="link">
+                    <i class="fa-regular fa-building"></i><span>Yettel</span>, Serbia
+                  </a>
+                </div>
+                <div class="desc">
+                    <p> 
+                        <strong>Data-Driven Personalization:</strong> 
+                        Analyzed large datasets (Python, PySpark) to optimize
+                        content personalization and CRM strategies, leading to a measurable increase in customer
+                        engagement. <br>
+                        <strong>ML Model Development:</strong> 
+                        Built and deployed machine learning models (including
+                        classification and recommendation systems) for customer targeting, boosting campaign
+                        effectiveness. <br>
+                        <strong>LLM-Based Solutions:</strong> 
+                        Pioneered the creation of LLM applications to automate and
+                        enhance marketing workflows, improving efficiency across multiple campaigns.
+                        Cross-Functional Collaboration: Worked closely with CRM and Software Engineer teams to
+                        transform raw data into actionable insights, significantly improving targeting strategies.
+                    </p>
+                </div>
+                <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Data-Driven Personalization · Machine Learning · Large Language Models · Big Data · AI-Driven Insights</div>
+              </div>
+            </div>
+
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Jun 2023 - Mar 2024 <br> <b>Internship</b></div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Business Services Specialist</h3>
+                    <div class="institution">
+                        <a href="https://yettel.rs" rel="nofollow" target="_blank" class="link">
+                            <i class="fa-regular fa-building"></i><span>Yettel</span>, Serbia
+                        </a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            <strong>Advanced B2B Solutions:</strong> Conducted market analyses to develop proposals for IoT, Cloud,
+                            M2M, and Cyber Security integrations, driving growth in new business opportunities. <br>
+                            <strong>Generative AI Research:</strong> Investigated and implemented AI-driven process
+                            improvements, resulting in streamlined operations and reduced costs. <br>
+                            <strong>Microsoft 365 Optimization:</strong> Improved internal processes and developed competitive
+                            offerings for Microsoft 365 solutions, leading to an increase in B2B customer retention.
+                        </p>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Market Research · Business Analysis · Generative AI Applications · Process Streamlining via AI</div>
+                </div>
+            </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Mar 2021 - Mar 2023 <br> <b>Internship</b></div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Junior Teaching Associate | Web Administrator</h3>
+                    <div class="institution">
+                        <a href="https://www.singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Singidunum University</span>, Serbia</a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            <strong>Enhancement & Research:</strong> Taught and updated programming and data
+                            structures courses (Programming Methods, Data Structures & Algorithms, OOP, Business
+                            Informatics) to align with industry best practices. <br>
+                            <strong>Student Engagement:</strong> Facilitated hands-on learning through pre-exam and exam
+                            activities, resulting in high satisfaction and improved practical skills among students.
+                        </p>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Teaching · IT Development · Academic Research · Hands-On Learning</div>
+                </div>
+            </div>
+
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Nov 2022 - Jan 2023 <br> <b>Internship</b></div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Salesforce Developer</h3>
+                    <div class="institution">
+                        <a href="https://www.intermino.com" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Intermino</span>, Serbia</a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            <strong>Salesforce Application Development:</strong> Developed a custom business timesheet application on the
+                            Salesforce platform, utilizing APEX and standard Salesforce functionalities. <br>
+                            <strong>Certification:</strong> Received “Salesforce for Future Developers” certification during the
+                            internship, strengthening Salesforce development expertise.
+                        </p>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Salesforce Development · CRM System Customization & Development · Business Process Automation · Data-Driven Application Design</div>
+                    <div class="thesis">
+                        <a href="./static/images/intermino.jpeg" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-certificate"></i>View Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-gears"></i>
+              <span>Skills</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date"><i class="fa-solid fa-code"></i> <span>Proffessional</span></div>
+                </div>
+                <div class="cv-item-right">
+                    <ul class="cv-ul-list">
+                        <li><strong>Data Science & Machine Learning:</strong> Proficient in Python and SQL for data analysis and predictive modeling. Skilled in PySpark for handling large datasets, developing customer targeting models, and conducting machine learning analyses to optimize marketing and CRM efforts.</li>
+                        <li><strong>Big Data & Distributed Computing:</strong> Skilled in PySpark for handling large datasets, optimizing customer segmentation, and improving campaign targeting through machine learning.</li>
+                        <li><strong>AI & Generative Technologies:</strong> Researched and implemented AI-driven marketing strategies, integrating generative AI to streamline internal processes and enhance customer engagement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date"><i class="fa-solid fa-computer"></i><span>Computer Science</span></div>
+                </div>
+                <div class="cv-item-right">
+                    <ul class="cv-ul-list">
+                        <li><strong>Software & Web Development:</strong> Expertise in full-stack development using Python, Java, JavaScript (Node.js), PHP, and SQL for backend development, along with HTML, CSS, and JavaScript for frontend applications. Proficient in CMS tools like WordPress and Magento.</li>
+                        <li><strong>Systems & IT Infrastructure:</strong> Advanced knowledge of Linux-based systems and Windows Server environments, with experience in system administration and automation.</li>
+                        <li><strong>Cloud & IoT Technologies:</strong> Experienced in leveraging cloud computing (Microsoft 365, AI-powered applications) and exploring IoT and M2M solutions for business process optimization.</li>
+                        <li><strong>Database Management & SQL:</strong> Strong skills in relational and NoSQL databases, optimizing query performance and ensuring data integrity in large-scale applications.</li>
+                        <li><strong>Intelligence & Analytics:</strong> Strong background in data-driven decision-making, market research, and trend identification. Experienced in predictive modeling to enhance strategic business initiatives.</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date"><i class="fa-solid fa-user"></i><span>Personality</span></div>
+                </div>
+                <div class="cv-item-right">
+                    <ul class="cv-ul-list">
+                        <li><strong>Analytical Thinking & Problem-Solving:</strong> Strong ability to identify challenges, analyze complex data, and develop innovative solutions, particularly in AI, data science, and business analytics.</li>
+                        <li><strong>Communication & Presentation Skills:</strong> Excellent ability to convey technical and analytical insights to both technical and non-technical stakeholders. Strong experience in teaching and mentoring students in complex programming and AI concepts.</li>
+                        <li><strong>Collaboration & Teamwork:</strong> Proven ability to work in cross-functional teams, fostering a collaborative environment between data science, marketing, and business strategy teams.</li>
+                        <li><strong>Adaptability & Continuous Learning:</strong> Quickly adapts to emerging technologies and evolving industry trends. Passionate about learning new methodologies, particularly in AI, cloud computing, and generative technologies.</li>
+                        <li><strong>Attention to Detail:</strong> Highly precise in data analysis, programming, and system optimization, ensuring accuracy and efficiency in all projects.</li>
+                        <li><strong>Time Management & Prioritization:</strong> Ability to efficiently manage multiple projects and responsibilities, balancing technical work, research, and business initiatives.</li>
+                        <li><strong>Empathy & Mentorship:</strong> Experience in teaching, mentoring, and guiding students and professionals to develop their technical and analytical skills.</li>
+                        <li><strong>Resilience & Work Ethic:</strong> Persistent and dedicated to achieving goals, consistently delivering high-quality work under tight deadlines and challenging conditions.</li>
+
+                      </ul>
+                </div>
+            </div>
+            <div class="cv-section-item">
+              <div class="cv-item-left">
+                  <div class="date"><i class="fa-solid fa-language"></i><span>Languages</span></div>
+              </div>
+              <div class="cv-item-right">
+                  <ul class="cv-ul-list">
+                      <li>Serbian - native</li>
+                      <li>English - B2 Full professional proficiency</li>
+                      <li>French - A1 Limited working proficiency</li>
+                  </ul>
+              </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Education</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Feb 2025 - Present</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>PhD in Intelligent Software Engineering</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Singidunum University</span></a>
+                    </div>
+                    <!-- <div class="desc"><strong>Research Focus:</strong> Advanced AI techniques and Large Language Model (LLM) applications for intelligent systems.</div> -->
+                    <!-- <div class="thesis">
+                        <a href="https://singipedia.singidunum.ac.rs/izdanje/43900-softverska-resenja-za-automatizovano-ocenjivanje-radova-u-oblasti-racunarstva" rel="nofollow" target="_blank" class="link">View my thesis</a>
+                    </div> -->
+                    <p>
+                      Conducting advanced research on Artificial Intelligence and Large Language Models (LLMs) applications for intelligent systems. 
+                      Focusing on AI-driven automation, machine learning optimization, and the integration of LLMs in software engineering to enhance system intelligence and decision-making. 
+                      Exploring innovative methodologies to advance AI-powered solutions in business, marketing, and telco infrastructure.
+                    </p>
+                    <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Artificial Intelligence · Large Language Models · AI-driven Optimization · Machine Learning · Deep Learning · Advanced Research</div>
+                </div>
+            </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Oct 2023 - Oct 2024</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Master of Science, Marketing Analytics, MSc</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Singidunum University</span></a>
+                    </div>
+                    <p>
+                      Focusing on data-driven marketing, artificial intelligence applications, and business intelligence. 
+                      Researching the role of Generative AI in intelligent marketing as part of the master’s thesis, analyzing how AI can optimize customer engagement, personalization, 
+                      and campaign performance.
+                    </p>
+                    <div class="desc"><strong>Master Thesis:</strong> Application of generative artificial intelligence and large language models in the implementation of intelligent marketing solutions</div>
+                    <div class="thesis">
+                        <a href="https://singipedia.singidunum.ac.rs/izdanje/44559-primena-generativne-vestacke-inteligencije-i-velikih-jezickih-modela-u-imlementaciji-inteligentnih-marketing-resenja" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-paperclip"></i>View thesis</a>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Artificial Intelligence · Large Language Models · Data-Driven Marketing · Generative AI · Predictive Analytics · Market Research</div>
+                </div>
+            </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Oct 2021 - Jan 2022</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>International Student Program, Erasmus+</h3>
+                    <div class="institution">
+                        <a href="https://www.ravensburg.dhbw.de/startseite" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Baden-Wuerttemberg Cooperative State University (DHBW)</span></a>
+                    </div>
+                    <div class="thesis">
+                        <a href="./static/images/dhbw_erasmus.jpeg" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-certificate"></i>View Certificate</a>
+                    </div>
+                    <p>
+                      Selected for an Erasmus+ exchange program, expanding knowledge in international business, market analysis, statistics and strategic business planning. 
+                      Engaged in cross-cultural collaboration and interdisciplinary research to explore the integration of technology and business strategies.
+                    </p>
+                    <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Business Strategy · Market Analysis · Business Development · Statistics · Market Research</div>
+                </div>
+            </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Sep 2019 - Jun 2023</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Bachelor of Science, Information Technologies, BSc</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Singidunum University</span></a>
+                    </div>
+                    <p>
+                      Graduated with honors (GPA: 9.75/10.00), specializing in computer science, programming, business intelligence and marketing analytics. 
+                      Developed a strong foundation in software development, algorithms, data structures, databases, and cloud computing. 
+                      Gained practical experience through hands-on projects, research, and case studies, with a focus on software development, business intelligence and IT&Marketing projects.
+                      Actively participated in academic organizations, serving as Student Vice-Dean, President of the Students' Parliament, and Coordinator of the Students' Organization.
+                    </p>
+                    <div class="desc"><i class="fa-solid fa-gear"></i> Skills: Data Science · Artificial Intelligence (AI) · Programming · Business Analysis</div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-copy"></i>
+              <span>Publications</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">May 2025</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Enhancing Retrieval-Augmented Generation with Graph-Based Retrieval and Generative Modeling</h3>
+                    <div class="institution">
+                        <a href="https://sinteza.singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Singidunum University International Scientific Conference</span></a>
+                    </div>
+                    <p>
+                       This paper presents the design and implementation of a robust Retrieval-Augmented Generation (RAG) system that integrates advanced retrieval, ranking, and generative techniques to address knowledge-intensive tasks. 
+                       The system combines dense retrieval using ChromaDB, metadata-driven keyword extraction with YAKE and KMedoids algorithm for clustering keywords, graph-based retrieval leveraging PageRank, and cross-encoder re-ranking to deliver precise and contextually relevant results. 
+                       These retrieval outputs are synthesized into high-quality conversational responses using Hugging Face models and Google API. A modular pipeline ensures scalability, enabling the seamless integration of various retrieval and generative components. 
+                       Evaluation results demonstrate high retrieval precision, improved recall through graph-based methods, and enhanced response quality through structured prompt engineering. 
+                       This work highlights the effectiveness of combining diverse techniques in RAG systems, offering a foundation for scalable, reliable, and context-aware applications in domains such as customer support, education, and research.
+                    </p>
+                       <!-- <div class="desc"><i class="fa-solid fa-key"></i> DOI: ???</div> -->
+                       <div class="desc"><i class="fa-solid fa-at"></i> <a class="link"target="_blank"  href="https://www.linkedin.com/in/vujicdejan">Dejan Vujić</a>, <a class="link" target="_blank" href="https://rs.linkedin.com/in/angelina-njegus">Angelina Njeguš</a>, <a class="link" target="_blank" href="https://rs.linkedin.com/in/nebojsa-bacanin-dzakula">Nebojša Bačanin Džakula</a></div>
+                       <div class="thesis">
+                        <a href="#" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-paperclip"></i>View Paper</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section cert">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-bars-progress"></i>
+              <span>Selected Projects</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">May 2024 - Present</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Chatbuddy Assistant</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Associated with Yettel, Serbia</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            Build a RAG pipeline for an internal knowledge platform - It embeds local data with vector
+                            search, and employs a reranking mechanism to identify the most relevant context for user
+                            queries. The system then generates concise and accurate text responses by feeding this
+                            top-ranked context to a LLMs, providing an intelligent and efficient knowledge retrieval
+                            experience.
+                        </p>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-user"></i> Data Scientist</div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Aug 2024 - Jan 2025</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>AI PressClipping Tool</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Associated with Yettel, Serbia</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            Leverages Machine Learning and LLMs to automatically scrape, classify, and summarize
+                            relevant web articles for real-time topic and competitor tracking. By integrating Python
+                            web scraping frameworks with NLP-driven text analysis (topic classification, sentiment
+                            detection, and summarization), the system swiftly filters industry and competitor news to
+                            provide concise, actionable insights, significantly reducing the manual workload involved
+                            in press monitoring and intelligence gathering.
+                        </p>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-user"></i> Data Scientist</div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Apr 2024 - Present</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Yettel Friday (Legacy Project)</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Associated with Yettel, Serbia</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            Yettel Friday is a promotional campaign, offering special Friday-only deals to customers. In
+                            this project, responsible for preparing the target customer lists, performing data
+                            transformations to refine and finalize the audience segments, and transforming and
+                            preparing broadcast data to ensure accurate, timely, and effective delivery of promotional
+                            offers.
+                        </p>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-user"></i> Data Scientist</div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Jul 2024 - Sep 2024</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Postpaid SS & LS Redesign</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Associated with Yettel, Serbia</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            The project involves the development and implementation of new tariff packages for
+                            mobile services for the private sector, as well as the development of new target campaigns
+                            and business rules implementation for customers.
+                        </p>
+                    </div>
+                    <div class="desc"><i class="fa-solid fa-user"></i> Data Scientist</div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section cert">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-certificate"></i>
+              <span>Certifications</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">2025</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Supervised Machine Learning: Regression and Classification – DeepLearning.AI & Stanford University</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Coursera</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            Successfully completed the first course in the Machine Learning Specialization, covering the fundamentals of supervised machine learning. 
+                            Acquired hands-on experience in building and training predictive models using Python, NumPy, and scikit-learn. 
+                            Developed skills in implementing linear and logistic regression for prediction and classification tasks. 
+                            This course, taught by renowned AI expert Andrew Ng, is part of a comprehensive program designed to provide practical knowledge and foundational 
+                            concepts essential for real-world AI applications.
+                        </p>
+                    </div>
+                    <div class="thesis">
+                        <a href="#" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-certificate"></i>View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">2024</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>The Data Science Course: Complete Data Science Bootcamp</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Udemy</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            Successfully completed training in data science, covering the fundamental concepts and methodologies used to extract insights and knowledge from data. 
+                            Gained practical experience in applying machine learning (ML) and deep learning (DL) techniques to analyze and understand complex datasets. 
+                            Developed skills in building predictive models using ML algorithms such as linear regression, decision trees, and k-means clustering, 
+                            as well as utilizing DL architectures like convolutional neural networks (CNNs) and recurrent neural networks (RNNs) for tasks such as image and 
+                            speech recognition.
+                            <br>This training provided a comprehensive understanding of data science workflows, including data preprocessing, feature engineering, and visualization. 
+                            It emphasized the integration of ML and DL techniques to solve real-world data challenges effectively.
+                        </p>
+                    </div>
+                    <div class="thesis">
+                        <a href="#" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-certificate"></i>View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">2023</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Master the Coding Interview: Data Structures + Algorithms</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Udemy</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            Successfully completed an industry-leading course designed to prepare developers for technical interviews at top tech companies such as Google, Meta, 
+                            Amazon, and Microsoft. Gained comprehensive knowledge of essential computer science concepts, including Big-O notation, data structures 
+                            (arrays, linked lists, hash tables, trees, graphs, stacks, and queues), and algorithms (sorting, searching, recursion, dynamic programming, 
+                            and tree/graph traversal).
+                            <br>Beyond technical skills, the course provided valuable insights into the entire interview process—from securing interviews to salary negotiation 
+                            and career growth strategies. Taught by an experienced senior developer with a proven track record in Silicon Valley and Toronto, this 
+                            course offers practical, real-world knowledge and a strong foundation to excel in software engineering roles.
+                        </p>
+                    </div>
+                    <div class="thesis">
+                        <a href="#" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-certificate"></i>View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">2023</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Complete Python Developer in 2023: Zero to Mastery</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Udemy</span></a>
+                    </div>
+                    <div class='desc'>
+                        <p>
+                            Successfully completed a comprehensive, hands-on course designed to transform beginners into professional Python developers. 
+                            Gained in-depth knowledge of Python fundamentals, object-oriented programming, functional programming, and advanced concepts such as decorators, 
+                            generators, and regular expressions. Acquired practical experience in diverse Python applications, including web development, data science, 
+                            machine learning, automation, and web scraping.
+                            <br>The course included the development of 12+ real-world projects, such as building automation tools with Selenium, web scrapers using BeautifulSoup, 
+                            machine learning models with scikit-learn, and a portfolio website to showcase skills. Additionally, the training covered essential software 
+                            development practices, including testing, debugging, error handling, and working with APIs.
+                            <br>Taught by an experienced senior developer with industry experience in Silicon Valley and Toronto, this course provided the necessary 
+                            skills to confidently pursue a career in Python development and secure positions at top tech companies.
+                        </p>
+                    </div>
+                    <div class="thesis">
+                        <a href="#" rel="nofollow" target="_blank" class="link"><i class="fa-solid fa-certificate"></i>View Certificate</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <span>Organizations / Volunteering</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Oct 2024 - Present</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Alumni Association</h3>
+                    <div class="institution">
+                        <a href="https://alumni.singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Alumni Association of Singidunum University</span></a>
+                    </div>
+                    <p>
+                       This paper presents the design and implementation of a robust Retrieval-Augmented Generation (RAG) system that integrates advanced retrieval, ranking, and generative techniques to address knowledge-intensive tasks. 
+                       The system combines dense retrieval using ChromaDB, metadata-driven keyword extraction with YAKE and KMedoids algorithm for clustering keywords, graph-based retrieval leveraging PageRank, and cross-encoder re-ranking to deliver precise and contextually relevant results. 
+                       These retrieval outputs are synthesized into high-quality conversational responses using Hugging Face models and Google API. A modular pipeline ensures scalability, enabling the seamless integration of various retrieval and generative components. 
+                       Evaluation results demonstrate high retrieval precision, improved recall through graph-based methods, and enhanced response quality through structured prompt engineering. 
+                       This work highlights the effectiveness of combining diverse techniques in RAG systems, offering a foundation for scalable, reliable, and context-aware applications in domains such as customer support, education, and research.
+                    </p>
+                    <div class="desc"><i class="fa-solid fa-user"></i> Member</div>
+            </div>
+          </div>
+          <div class="cv-section-item">
+            <div class="cv-item-left">
+                <div class="date">Oct 2023</div>
+            </div>
+            <div class="cv-item-right">
+                <h3>Volunteer</h3>
+                <div class="institution">
+                    <a href="https://datasciconference.com/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Data Science Conference</span></a>
+                </div>
+                <p>
+                   This paper presents the design and implementation of a robust Retrieval-Augmented Generation (RAG) system that integrates advanced retrieval, ranking, and generative techniques to address knowledge-intensive tasks. 
+                   The system combines dense retrieval using ChromaDB, metadata-driven keyword extraction with YAKE and KMedoids algorithm for clustering keywords, graph-based retrieval leveraging PageRank, and cross-encoder re-ranking to deliver precise and contextually relevant results. 
+                   These retrieval outputs are synthesized into high-quality conversational responses using Hugging Face models and Google API. A modular pipeline ensures scalability, enabling the seamless integration of various retrieval and generative components. 
+                   Evaluation results demonstrate high retrieval precision, improved recall through graph-based methods, and enhanced response quality through structured prompt engineering. 
+                   This work highlights the effectiveness of combining diverse techniques in RAG systems, offering a foundation for scalable, reliable, and context-aware applications in domains such as customer support, education, and research.
+                </p>
+                <div class="desc"><i class="fa-solid fa-user"></i> Volunteer</div>
+        </div>
+      </div>
+      <div class="cv-section-item">
+        <div class="cv-item-left">
+            <div class="date">Aug 2022 - Dec 2023</div>
+        </div>
+        <div class="cv-item-right">
+            <h3>Participant of Youth Camps/Workshops/Initiatives</h3>
+            <div class="institution">
+                <a href="https://www.giz.de/en/html/index.html" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>The Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH</span></a>
+            </div>
+            <p>
+               This paper presents the design and implementation of a robust Retrieval-Augmented Generation (RAG) system that integrates advanced retrieval, ranking, and generative techniques to address knowledge-intensive tasks. 
+               The system combines dense retrieval using ChromaDB, metadata-driven keyword extraction with YAKE and KMedoids algorithm for clustering keywords, graph-based retrieval leveraging PageRank, and cross-encoder re-ranking to deliver precise and contextually relevant results. 
+               These retrieval outputs are synthesized into high-quality conversational responses using Hugging Face models and Google API. A modular pipeline ensures scalability, enabling the seamless integration of various retrieval and generative components. 
+               Evaluation results demonstrate high retrieval precision, improved recall through graph-based methods, and enhanced response quality through structured prompt engineering. 
+               This work highlights the effectiveness of combining diverse techniques in RAG systems, offering a foundation for scalable, reliable, and context-aware applications in domains such as customer support, education, and research.
+            </p>
+            <div class="desc"><i class="fa-solid fa-user"></i> Participant in project</div>
+    </div>
+  </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Nov 2022 - Jun 2023</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Case Study Club</h3>
+                    <div class="institution">
+                        <a href="https://singidunum.ac.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Singidunum University</span></a>
+                    </div>
+                    <p>
+                       This paper presents the design and implementation of a robust Retrieval-Augmented Generation (RAG) system that integrates advanced retrieval, ranking, and generative techniques to address knowledge-intensive tasks. 
+                       The system combines dense retrieval using ChromaDB, metadata-driven keyword extraction with YAKE and KMedoids algorithm for clustering keywords, graph-based retrieval leveraging PageRank, and cross-encoder re-ranking to deliver precise and contextually relevant results. 
+                       These retrieval outputs are synthesized into high-quality conversational responses using Hugging Face models and Google API. A modular pipeline ensures scalability, enabling the seamless integration of various retrieval and generative components. 
+                       Evaluation results demonstrate high retrieval precision, improved recall through graph-based methods, and enhanced response quality through structured prompt engineering. 
+                       This work highlights the effectiveness of combining diverse techniques in RAG systems, offering a foundation for scalable, reliable, and context-aware applications in domains such as customer support, education, and research.
+                    </p>
+                    <div class="desc"><i class="fa-solid fa-user"></i> Member</div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+         <section class="cv-section">
+          <h2>
+            <div class="title-container">
+              <i class="fa-solid fa-heart"></i>
+              <span>Recommendations</span>
+            </div>
+            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+          </h2>
+          <div class="cv-section-body" style="display: none;">
+            <div class="cv-section-item">
+              <div class="cv-item-left">
+                  <div class="date">Jan 2024</div>
+              </div>
+              <div class="cv-item-right">
+                  <h3>Ivan Matešić</h3>
+                  <div class="institution">
+                    <a href="https://www.yettel.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Yettel Serbia</span></a>
+                  </div>
+                  <p>
+                    I have had the pleasure of working with Dejan Vujić for period of 12 months and can attest to their exceptional skills, work ethic, and character. 
+                    His work was always completed on time and with the highest level of quality. Dejan multitasks effectively and is able to handle a high-volume workload. 
+                    He has my highest recommendation, and I am happy to furnish more details if you would like additional information.
+                  </p>
+                  <div class="desc"><i class="fa-solid fa-user"></i> Ivan was senior to Dejan</div>
+          </div>
+        </div>
+            <div class="cv-section-item">
+                <div class="cv-item-left">
+                    <div class="date">Oct 2024 - Present</div>
+                </div>
+                <div class="cv-item-right">
+                    <h3>Aleksandar Đukanov</h3>
+                    <div class="institution">
+                        <a href="https://www.yettel.rs/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>Yettel Serbia</span></a>
+                    </div>
+                    <p>
+                      I’ve had the chance to be Dejan’s mentor during his internship at Yettel Srbija. Dejan is a very responsible young professional, approaching the tasks 
+                      given to him with utmost detail – taking care of every step along the way. He is results driven, has a professional approach, is very open to learning. 
+                      Furthermore, he is very adaptable to change. I can recommend Dejan for any entry level role in Marketing or IT areas of business. 
+                    </p>
+                    <div class="desc"><i class="fa-solid fa-user"></i> Aleksandar was Dejan’s mentor</div>
+            </div>
+          </div>
+          
+      <div class="cv-section-item">
+        <div class="cv-item-left">
+            <div class="date">Jul 2023</div>
+        </div>
+        <div class="cv-item-right">
+            <h3>Života Kovačević</h3>
+            <div class="institution">
+                <a href="https://www.spothopperapp.com/" rel="nofollow" target="_blank" class="link"><i class="fa-regular fa-building"></i><span>SpotHopper LLC</span></a>
+            </div>
+            <p>
+              I have the pleasure of writing a recommendation for my dear college colleague, Dejan. During our four years of study, I had the opportunity to collaborate with Dejan in the fields of information technology, digital marketing and web development.
+              Through our work on Web Development projects, Dejan demonstrated a deep understanding of programming languages, architectures and modern technologies for creating web applications. His ability to quickly master new technologies and apply them in practice certainly sets him apart as an expert in this field.
+              Dejan is not only an expert in his field, but also an extremely committed team player. He was always ready to support colleagues and share his knowledge, which contributed to our success in joint projects.
+              Given Dejan's professional qualities, dedication and skills, I unreservedly recommend him to any employer.
+            </p>
+            <div class="desc"><i class="fa-solid fa-user"></i> Života and Dejan worked on the same projects</div>
+    </div>
+  </div>
+          </div>
+        </section>
+                  <h2>
+                    <div class="title-container drop-tags">
+                      <i class="fa-solid fa-tag"></i>
+                      <span>Tags</span>
+                      <br><br>
+                    </div>
+                  </h2>
+                  <div class="hashtag-container">
+                    <div class="hashtag">Data Science</div>
+                    <div class="hashtag">Machine Learning</div>
+                    <div class="hashtag">Advanced Analytics</div>
+                    <div class="hashtag">Artificial Intelligence</div>
+                    <div class="hashtag">Big Data</div>
+                    <div class="hashtag">Data Engineering</div>
+                    <div class="hashtag">Statistics</div>
+                    <div class="hashtag">Business Intelligence</div>
+                    <div class="hashtag">Predictive Analytics</div>
+                    <div class="hashtag">Data Visualization</div>
+                    <div class="hashtag">Exploratory Data Analysis</div>
+                  </div>
+
+  <div class="chatbot-icon" id="chatbotIcon">
+    <i class="fa-solid fa-hand-sparkles"></i>
+  </div>
+
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+      <i class="fa-solid fa-robot"></i>
+      AI-Powered Assistant
+      <span class="close-btn" id="closeChat">&times;</span>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-message bot-message">Hi, what interests you about Dejan?</div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Write a message...">
+      <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <div class="chat-invite" id="chatInvite">
+  I'm an AI assistant, do you want to chat with me?
+  </div>
+
+  <p>&nbsp;</p>
+        <p class="edit-pg">
+          © 2025 Dejan Vujić | March, 2025.
+        </p>
+        <p>&nbsp;</p>
+              </div>
+            </div>
+            <div id="cookie-popup" class="cookie-popup">
+              <p>
+                This website uses cookies to improve your browsing experience and to enable advanced features, such as content summarization and an interactive chatbot that provides 
+                answers based solely on the information available on this site. <br>By continuing to use this website, you agree to our use of cookies. If you do not agree, please adjust 
+                your browser settings accordingly.
+              </p>
+              <button id="accept-cookies" class="cookie-btn">Accept</button>
+            </div>
+            
+            
+          </div>
+          
+        </section>
+      </section>
+    </div>
+  </section>
+  <script defer src="./static/script.min.js" nonce="123456"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:8443
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:19] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:19] "GET /static/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:19] "GET /static/script.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:19] "GET /static/images/ai.gif HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:19] "GET /static/images/profile.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:23] "GET /summarize-local HTTP/1.1" 200 -
+ERROR:__main__:Got requested question Where Dejan works now?
+NoneType: None
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:31] "GET /static/images/ai.gif HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:09:34] "POST /ask HTTP/1.1" 200 -
+/opt/anaconda3/envs/personal_website/lib/python3.12/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+ * Serving Flask app 'app'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://127.0.0.1:8443
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:__main__:New session id: 94ac3c25-ba38-4303-ab09-b1f3c9b76310
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:35:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:35:28] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:35:28] "GET /static/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:35:28] "GET /static/script.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:35:28] "GET /static/images/ai.gif HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:35:28] "GET /static/images/profile.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Apr/2025 11:35:36] "GET /summarize-local HTTP/1.1" 200 -
